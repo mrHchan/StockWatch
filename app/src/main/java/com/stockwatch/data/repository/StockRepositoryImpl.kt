@@ -1,7 +1,6 @@
 package com.stockwatch.data.repository
 
 import com.stockwatch.data.csv.CSVParser
-import com.stockwatch.data.csv.CompanyListingsParser
 import com.stockwatch.data.local.StockDatabase
 import com.stockwatch.data.mapper.toCompanyListing
 import com.stockwatch.data.mapper.toCompanyListingEntity
@@ -18,9 +17,9 @@ import javax.inject.Singleton
 
 @Singleton
 class StockRepositoryImpl @Inject constructor(
-    val api: StockApi,
-    val db: StockDatabase,
-    val companyListingsParser: CSVParser<CompanyListing>
+    private val api: StockApi,
+    private val db: StockDatabase,
+    private val companyListingsParser: CSVParser<CompanyListing>
 ): StockRepository {
 
     private val dao = db.dao
