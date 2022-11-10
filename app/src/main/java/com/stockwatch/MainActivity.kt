@@ -9,7 +9,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.ramcosta.composedestinations.DestinationsNavHost
-import com.stockwatch.presentation.company_listings.NavGraphs
+import com.stockwatch.presentation.NavGraphs
 import com.stockwatch.ui.theme.StockWatchAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
